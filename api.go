@@ -3,10 +3,12 @@
 package electme
 
 import (
-	//"appengine"
+	"google.golang.org/appengine"
 	"net/http"
 )
 
 func offices(w http.ResponseWriter, r *http.Request) *appError {
+	c := appengine.NewContext(r)
+    
     return nil;
 }
